@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>home</a>
+
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>crétion</a>
+     
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>produit locaux</a>
+    
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+</body>
+</html>
